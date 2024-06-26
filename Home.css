@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #e7e7e7;
+}
+
+.cabecalhohome {
+    background-color: #04C9F4;
+    color: #fff;
+    padding-left: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#container {
+    background-color: #d9d9d9;
+    width: 90%;
+    max-width: 600px;
+    padding: 10px;
+    height: auto;
+    margin: 9px;
+    margin-top: 5vh;
+    border-radius: 10px;
+   
+
+}
+
+#Cadastro {
+    display: grid;
+    grid-template-areas:"nome sobrenome"
+                        "email email"
+                        "senha senha";
+    grid-area: formulario;
+}
+
+main{
+    display: grid;
+    grid-template-areas:"formulario botoes"
+                        "formulario botoes"
+                        "botao botao";
+}       
+
+.um {
+    display: flex;
+    flex-direction: column;
+    grid-area: nome;
+    
+}
+
+.dois {
+    display: flex;
+    grid-area: sobrenome;
+    flex-direction: column;
+}
+
+.tres{
+    grid-area:email;
+
+}
+
+.quatro{
+    grid-area: senha;
+}
+
+label {
+    color: #fff;
+}
+
+.nome, .sobrenome, .email, .telefone {
+    border-style: none;
+    display: flex;
+    height: 30px;
+    margin: 5px;
+}
+
+.um, .dois {
+    width: 97%;
+}
+
+
+.tres input{
+    width: 96%;
+
+
+}
+
+.quatro input{
+    width: 96%;
+}
+
+#bottonsdemanipulacao {
+    height: auto;
+    margin-top: 2vh; 
+    margin-right: 12vh;
+    display: flex;
+    flex-direction: column;
+    grid-area: botoes;
+}
+
+#bottonNavegacao {
+    margin: 9px;
+    margin-top: 10px;
+    display: flex;
+    grid-area: botao;
+}
+
+button {
+    width: 80%;
+    max-width: 200px;
+    margin: 5px;
+    height: 35.26px;
+    border-style: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.incluir {
+    background-color: rgba(6, 134, 34, 1);
+}
+
+.editar {
+    background-color: rgba(253, 152, 0, 1);
+}
+
+.salvar {
+    background-color: rgba(4, 201, 244, 1);
+}
+
+.cancelar {
+    color: rgba(4, 201, 244, 1);
+}
+
+.excluir {
+    background-color: rgba(244, 4, 4, 1);
+}
+
+
+
+.primeiro, .anterior, .proximo, .ultimo {
+    width: 100px;
+    height: 48px;
+    background-color: black;
+    color: #fff;
+    margin: 5px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #fff;
+    color: #04C9F4;
+    height: 40px;
+    margin-top: 36vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
